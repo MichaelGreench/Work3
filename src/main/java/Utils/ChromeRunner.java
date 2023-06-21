@@ -17,6 +17,7 @@ public class ChromeRunner {
     @AfterTest
 
     public void closeChrome() {
+
         driver.close();
     }
 

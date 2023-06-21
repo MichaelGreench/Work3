@@ -1,12 +1,17 @@
 import StepObject.LogInSteps;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import static DataObject.LogInData.*;
 
 import static java.lang.Thread.sleep;
 
 public class LogIn {
+    
+    
 
     @Test
 
@@ -19,6 +24,7 @@ public class LogIn {
         step1.emailInput(incorrectEmailData);
         step1.passwordInput(incorrectPasswordData);
         step1.logInButton();
+
 
         sleep(5000);
         driver.close();
@@ -36,7 +42,11 @@ public class LogIn {
         step2.passwordInput(incorrectPasswordData);
         step2.logInButton();
 
+
+
         sleep(5000);
         driver.close();
     }
+
+
 }
