@@ -6,5 +6,5 @@ public interface LogInData {
 
         incorrectEmailData = "error@test.com",
         incorrectPasswordData = "12345678",
-        correctEmailData = "grigoryan.michael@yahoo.com";
+        correctEmailData = "wintozzzzz@gmail.com";
 }
